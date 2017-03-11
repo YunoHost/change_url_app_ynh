@@ -23,9 +23,9 @@ sudo sed -i "s@FOLDER@$app/@g" ../conf/nginx.conf
 
 sudo cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/$app.conf
 
-sudo mkdir -p /www/$app
+sudo mkdir -p /var/www/$app
 
-sudo cp ../conf/index.html /www/$app
+sudo cp ../conf/index.html /var/www/$app
 
 # Reload Nginx and regenerate SSOwat conf
 sudo service nginx reload
